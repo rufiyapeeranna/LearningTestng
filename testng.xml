@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <parameter name="username" value="rufiya_nv@omuni.com"/>
+    <parameter name="password" value="agent123"/>
+    
+    <test name="Test">
+        <classes>
+            <class name="Learntestng.Learning">
+                <methods>
+                    <include name="loginToFCM"/>
+                    <include name="loginToPCM"/>
+                    <include name="goToIMS"/>
+                </methods>
+            </class>
+            <class name="Learntestng.Learning2">
+                <methods>
+                    <include name="loginToOMS"/>
+                    <include name="loginToUSI"/>
+                    <include name="loginToCloud"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

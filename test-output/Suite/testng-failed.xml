@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="agent123"/>
+  <parameter name="username" value="rufiya_nv@omuni.com"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Learntestng.Learning2">
+        <methods>
+          <include name="loginToCloud" invocation-numbers="0"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Learntestng.Learning2 -->
+      <class name="Learntestng.Learning">
+        <methods>
+          <include name="initialize"/>
+          <include name="loginToFCM" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Learntestng.Learning -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
